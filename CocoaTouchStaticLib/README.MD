@@ -25,6 +25,7 @@ Project 子项目下。但是我们既然要使用，一般都是把头文件拖
 
 6.针对虚拟机simulator和真机，会生成不同的a文件
 
+
 * 我们都知道build项目分为debug 和Release两种，在Edit Scheme里配置build的方式
 （菜单路径：Product==>Scheme==>Edit Scheme) Run 下面的Build Configuration
 设置为Release时，build就会生成Release版本的.a文件，debug以此类推，我们项目一般用Release版本的
@@ -37,5 +38,6 @@ $ lipo -create Release-iphoneos/libCocoaTouchStaticLib.a Release-iphonesimulator
 
 ```
 
-
 7.查看使用本静态库测试工程[TestStaticLib](https://github.com/xsailor511/TestStaticLib)
+
+
