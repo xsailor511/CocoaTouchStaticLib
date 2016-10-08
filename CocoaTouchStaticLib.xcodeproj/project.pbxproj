@@ -13,6 +13,7 @@
 		79CDE4851DA8B8C4007D5DB7 /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4831DA8B8C4007D5DB7 /* StringHelper.m */; };
 		79CDE4861DA8B9AA007D5DB7 /* LogHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CDE4791DA8B358007D5DB7 /* LogHelper.h */; };
 		79CDE4881DA8B9E0007D5DB7 /* StringHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */; };
+		79CDE49C1DA8D600007D5DB7 /* README.MD in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE49B1DA8D600007D5DB7 /* README.MD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +45,7 @@
 		79CDE47A1DA8B358007D5DB7 /* LogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogHelper.m; sourceTree = "<group>"; };
 		79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
 		79CDE4831DA8B8C4007D5DB7 /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
-		79CDE4971DA8CE5F007D5DB7 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
+		79CDE49B1DA8D600007D5DB7 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +62,7 @@
 		79CDE4641DA8B332007D5DB7 = {
 			isa = PBXGroup;
 			children = (
+				79CDE49B1DA8D600007D5DB7 /* README.MD */,
 				79CDE46F1DA8B332007D5DB7 /* CocoaTouchStaticLib */,
 				79CDE46E1DA8B332007D5DB7 /* Products */,
 			);
@@ -77,7 +79,6 @@
 		79CDE46F1DA8B332007D5DB7 /* CocoaTouchStaticLib */ = {
 			isa = PBXGroup;
 			children = (
-				79CDE4971DA8CE5F007D5DB7 /* README.MD */,
 				79CDE4811DA8B89F007D5DB7 /* Data */,
 				79CDE4791DA8B358007D5DB7 /* LogHelper.h */,
 				79CDE47A1DA8B358007D5DB7 /* LogHelper.m */,
@@ -165,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CDE49C1DA8D600007D5DB7 /* README.MD in Sources */,
 				79CDE4851DA8B8C4007D5DB7 /* StringHelper.m in Sources */,
 				79CDE47B1DA8B358007D5DB7 /* LogHelper.m in Sources */,
 			);
@@ -298,6 +300,7 @@
 				79CDE4781DA8B332007D5DB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
