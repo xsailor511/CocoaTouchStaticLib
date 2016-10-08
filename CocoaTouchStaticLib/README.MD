@@ -1,4 +1,6 @@
 # 测试将文件打包成静态库
+* 查看使用本静态库测试工程[TestStaticLib](https://github.com/xsailor511/TestStaticLib)
+
 新建cocoa touch static libray 项目(ios)，主要用到设置里面的build phases，在此选项下
 
 1.设置Headers,如果没有此项目，就点击build phases 左上角的“+”，新增New Headers Phase
@@ -37,7 +39,5 @@ Project 子项目下。但是我们既然要使用，一般都是把头文件拖
 $ lipo -create Release-iphoneos/libCocoaTouchStaticLib.a Release-iphonesimulator/libCocoaTouchStaticLib.a -output libCocoaTouchStaticLib.a
 
 ```
-
-7.查看使用本静态库测试工程[TestStaticLib](https://github.com/xsailor511/TestStaticLib)
 
 
