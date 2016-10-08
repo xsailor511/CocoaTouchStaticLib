@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		79CDE4721DA8B332007D5DB7 /* CocoaTouchStaticLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4711DA8B332007D5DB7 /* CocoaTouchStaticLib.m */; };
-		79CDE4731DA8B332007D5DB7 /* CocoaTouchStaticLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CDE4701DA8B332007D5DB7 /* CocoaTouchStaticLib.h */; };
+		79CDE47B1DA8B358007D5DB7 /* LogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE47A1DA8B358007D5DB7 /* LogHelper.m */; };
+		79CDE47D1DA8B3D9007D5DB7 /* LogHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CDE4791DA8B358007D5DB7 /* LogHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79CDE4841DA8B8C4007D5DB7 /* StringHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79CDE4851DA8B8C4007D5DB7 /* StringHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDE4831DA8B8C4007D5DB7 /* StringHelper.m */; };
+		79CDE4861DA8B9AA007D5DB7 /* LogHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CDE4791DA8B358007D5DB7 /* LogHelper.h */; };
+		79CDE4881DA8B9E0007D5DB7 /* StringHelper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +22,17 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				79CDE4731DA8B332007D5DB7 /* CocoaTouchStaticLib.h in CopyFiles */,
+				79CDE4861DA8B9AA007D5DB7 /* LogHelper.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79CDE4871DA8B9B7007D5DB7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)/Data";
+			dstSubfolderSpec = 16;
+			files = (
+				79CDE4881DA8B9E0007D5DB7 /* StringHelper.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -26,8 +40,11 @@
 
 /* Begin PBXFileReference section */
 		79CDE46D1DA8B332007D5DB7 /* libCocoaTouchStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocoaTouchStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		79CDE4701DA8B332007D5DB7 /* CocoaTouchStaticLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocoaTouchStaticLib.h; sourceTree = "<group>"; };
-		79CDE4711DA8B332007D5DB7 /* CocoaTouchStaticLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoaTouchStaticLib.m; sourceTree = "<group>"; };
+		79CDE4791DA8B358007D5DB7 /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogHelper.h; sourceTree = "<group>"; };
+		79CDE47A1DA8B358007D5DB7 /* LogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogHelper.m; sourceTree = "<group>"; };
+		79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringHelper.h; sourceTree = "<group>"; };
+		79CDE4831DA8B8C4007D5DB7 /* StringHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringHelper.m; sourceTree = "<group>"; };
+		79CDE4971DA8CE5F007D5DB7 /* README.MD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +77,36 @@
 		79CDE46F1DA8B332007D5DB7 /* CocoaTouchStaticLib */ = {
 			isa = PBXGroup;
 			children = (
-				79CDE4701DA8B332007D5DB7 /* CocoaTouchStaticLib.h */,
-				79CDE4711DA8B332007D5DB7 /* CocoaTouchStaticLib.m */,
+				79CDE4971DA8CE5F007D5DB7 /* README.MD */,
+				79CDE4811DA8B89F007D5DB7 /* Data */,
+				79CDE4791DA8B358007D5DB7 /* LogHelper.h */,
+				79CDE47A1DA8B358007D5DB7 /* LogHelper.m */,
 			);
 			path = CocoaTouchStaticLib;
 			sourceTree = "<group>";
 		};
+		79CDE4811DA8B89F007D5DB7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				79CDE4821DA8B8C4007D5DB7 /* StringHelper.h */,
+				79CDE4831DA8B8C4007D5DB7 /* StringHelper.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		79CDE47C1DA8B3C6007D5DB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CDE4841DA8B8C4007D5DB7 /* StringHelper.h in Headers */,
+				79CDE47D1DA8B3D9007D5DB7 /* LogHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		79CDE46C1DA8B332007D5DB7 /* CocoaTouchStaticLib */ = {
@@ -76,6 +116,8 @@
 				79CDE4691DA8B332007D5DB7 /* Sources */,
 				79CDE46A1DA8B332007D5DB7 /* Frameworks */,
 				79CDE46B1DA8B332007D5DB7 /* CopyFiles */,
+				79CDE47C1DA8B3C6007D5DB7 /* Headers */,
+				79CDE4871DA8B9B7007D5DB7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -123,7 +165,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79CDE4721DA8B332007D5DB7 /* CocoaTouchStaticLib.m in Sources */,
+				79CDE4851DA8B8C4007D5DB7 /* StringHelper.m in Sources */,
+				79CDE47B1DA8B358007D5DB7 /* LogHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
