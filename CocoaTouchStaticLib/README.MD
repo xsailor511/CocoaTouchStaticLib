@@ -37,4 +37,5 @@ $ lipo -create Release-iphoneos/libCocoaTouchStaticLib.a Release-iphonesimulator
 
 ```
 
+
 7.查看使用本静态库测试工程[TestStaticLib](https://github.com/xsailor511/TestStaticLib)
