@@ -36,3 +36,5 @@ Project 子项目下。但是我们既然要使用，一般都是把头文件拖
 $ lipo -create Release-iphoneos/libCocoaTouchStaticLib.a Release-iphonesimulator/libCocoaTouchStaticLib.a -output libCocoaTouchStaticLib.a
 
 ```
+
+7.查看测试工程[TestStaticLib]()
